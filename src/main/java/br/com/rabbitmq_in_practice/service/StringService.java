@@ -13,7 +13,7 @@ public class StringService {
     private final RabbitTemplate rabbitTemplate;
 
     public void produce(String message) {
-        log.info("Received message " + message);
+        log.info("Received message: " + message);
         rabbitTemplate.convertAndSend(RabbitMqConfig.EXG_NAME_MARKETPLACE,
                 RabbitMqConfig.RK_PRODUCT_LOG,
                 message);
