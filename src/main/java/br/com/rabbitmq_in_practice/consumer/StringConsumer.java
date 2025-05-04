@@ -5,7 +5,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Log4j2
-@Component
+// @Component
 public class StringConsumer {
 
     @RabbitListener(queues = {"product.log"})
